@@ -1,0 +1,418 @@
+/*共通======================================================*/
+a{
+	text-decoration: none;
+	color: black;
+}
+/*PC========================================================*/
+@media screen and (min-width: 641px){
+	.sp{
+		display: none;
+	}
+
+
+	/*ヘッダー================================================================*/
+	header{
+		background: url(../images/header/header-back.png) no-repeat;
+		background-size: cover;
+	}
+
+	#header-line{
+		height: 10px;
+		background-color: #1184a6;
+	}
+
+	#header-inner{
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	#header-top #t-left{
+		float: left;
+		margin-top: 10px;
+	}
+	#header-top #t-right{
+		float: right;
+		margin-top: 40px;
+	}
+	#header-top #t-right ul li{
+		float: right;
+		margin-right: 30px;
+
+	}
+
+
+	#header-middle p img{
+		width: 100%;
+	}
+
+	#header-bottom #b-navi{
+		width: 850px;
+		margin: 0 auto;
+	}
+
+	#header-bottom #b-navi ul li{
+		float: left;
+		margin-right: 30px;
+		padding-right: 30px;
+		border-right: 1px solid #2b2b2b;
+	}
+	#header-bottom #b-navi ul li:hover{
+		opacity: 0.5;
+	}
+	#header-bottom #b-navi ul li:last-child{
+	    border-right: none;
+	    margin-right: 0px;
+	    padding-right: 0px;
+	}
+
+	#goal{
+	    margin-top: 50px;
+	    height: 125px;
+	    text-align: center;
+	    padding-top: 47px;
+	    background: url(../images/goal/back01.png) repeat-x;	
+	}
+	#goal h2{
+		font-size: 20px;
+		padding-top: 20px;
+		color: #2b2b2b;
+		font-weight: bold;
+	}
+	#contents{
+		width: 1000px;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+	#contents-inner #inner-left{
+		float: left;
+		width: 660px;
+	}
+	#contents-inner #inner-left #info{
+		height: 300px;
+		overflow-y: scroll;
+	}
+
+	#contents-inner #inner-left #info ul{
+		margin-top: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px dotted #a0a0a0;
+	}
+	#contents-inner #inner-left #info ul li{
+		float: left;
+		line-height: 30px;
+		text-align: center;
+		margin-right: 20px;
+	}
+
+	#contents-inner #inner-left #info ul li#tag{
+	    width: 80px;
+	    background-color: #ff8c37;
+	    text-align: center;
+	    border-radius: 3px;
+	    color: white;
+	} 
+	#contents-inner #inner-left ul li#title{
+	    color: #1184a6;
+	}
+	#contents-inner #inner-left ul li a{
+	 	color: #1184a6;
+	}
+	#contents-inner #inner-left ul li a:hover{
+		opacity: 0.5;	
+	}
+	#contents-inner #inner-right{
+		float: right;
+		width: 300px;
+	}
+	#contents-inner #inner-right ul li{
+		height: 80px;
+		margin-bottom: 10px;
+	}
+	#contents-inner #schedule{
+	    float: left;
+		padding-top: 80px;
+	}
+	#contents-inner #schedule p{
+		color: red;
+		font-size: 14px;
+	}
+	#contents-inner #contact-box{
+		float: left;
+		padding-top: 110px;
+		padding-left: 40px;
+	}
+
+	#contents-inner #contact-box #adress ul li{
+	    float: left;
+	    height: 60px;
+	    margin-bottom: 10px;
+	}
+	#contents-inner #contact-box #tel ul li{
+		float: left;
+		height: 60px;
+	}
+	#menu{
+		width: 1000px;
+		margin: 0 auto;
+		margin-top: 100px;
+	}
+	#menu a {
+		width: 200px;
+		float: left;
+		margin-right: 60px;
+	}
+	#menu a dl:hover{
+		opacity: 0.7;
+	}
+	#menu a:last-child{
+	    margin-right: 0px;
+	}
+
+	#menu a dl dd p{
+		font-size: 18px;
+		color: #1184a6;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	#menu a dl dd h2{
+		text-align: center;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	#access-map{
+		width: 800px;
+		margin: 0 auto;
+	}
+	#access-map p{
+		margin-top: 130px;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	#access-map h2{
+		font-size: 12px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#access-map h3{
+		font-size: 12px;
+		text-align: center;
+		padding-bottom: 100px;
+	}
+	#footer{
+		background-color: #cee7ee;
+	}
+	#footer #footer-inner{
+		width: 800px;
+		margin: 0 auto;
+	}
+	#footer #footer-inner #logo{
+		float: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#footer #footer-inner #copyright{
+		float: right;
+		font-size: 12px;
+		padding-top: 80px;
+	}
+}
+/*SP=========================================================*/
+@media screen and (max-width: 640px){
+	.pc{
+		display: none;
+	}
+	.container{
+		width: 93.75%;
+		margin: 0 auto;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	iframe{
+		width: 100% !important;
+	}
+	#header-line{
+		height: 10px;
+		background-color: #1184a6;
+	}
+	#header-inner #header-top{
+		margin-bottom: 8%;
+	}
+	#header-inner #header-top #t-left{
+		margin-bottom: 5%;
+	}
+	#header-inner #header-top #t-left a{
+		width: 55.8%;
+		float: left;
+	}
+	#header-inner #header-top #t-left #menu_btn{
+		float: right;
+		width: 16.666%;
+	}
+	#header-inner #header-top #t-left #menu_btn:hover{
+		cursor: pointer;
+	}
+	#header-inner #header-top #t-right{
+		width: 90%;
+		margin: 0 auto;
+	}
+	#header-inner #header-top #t-right ul li {
+		width: 21.25%;
+		float: right;
+		margin-right: 5%;
+	}
+	#header-inner #header-top #t-right ul li:first-child{
+		margin-right: 0%;
+	}
+	#goal{
+		background: url(../images/goal/back01.png) repeat ;
+	}
+	#goal-inner{
+		width: 93.75%;
+		margin: 0 auto;
+		padding-top: 8.66%;
+		padding-bottom: 8.33%;
+	}
+	#goal-inner h2{
+		font-size: 4vw;
+		text-align: center;
+	}
+	#contents-inner #inner-left{
+		padding-top: 60px;
+	}
+	#contents-inner #inner-left #info ul{
+		margin-top: 3.33%;
+		padding-bottom: 1.66%;
+		border-bottom: 1px solid #a0a0a0;
+	}
+	#contents-inner #inner-left #info ul li{
+		float: left;
+	}
+	#contents-inner #inner-left #info ul li#tag{
+	    background-color: #ff8c37;
+	    text-align: center;
+	    border-radius: 3px;
+	    color: white;
+	    padding-top: 1%;
+	    padding-bottom: 1%;
+	    font-size: 2vw;
+	    width: 13.333%;
+	    margin-right: 3.333%;
+	}
+	#contents-inner #inner-left ul li#title{
+	    color: #1184a6;
+	    margin-left: 3.33%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    width: 60%;
+	}
+	#contents-inner #inner-left ul li a{
+	 	color: #1184a6;
+	}
+	#contents-inner #inner-right{
+		margin-top: 10%;
+		margin-bottom: 7%;
+	}	
+
+	#contents-inner #inner-right ul li{
+		float: left;
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 3%;
+	}
+	#contents-inner #inner-right ul li.last{
+		margin-right: 0%;
+	}
+	#contents-inner #schedule{
+		margin-bottom: 5%;
+	}
+	#contents-inner #schedule p{
+		color: #ff4537;
+		font-size: 2vw;
+	}
+
+	#contents-inner #contact-box #adress {
+	   width: 47.5%;
+	   float: left;
+	}
+	#contents-inner #contact-box #tel {
+		width: 47.5%;
+		float: right;
+	}
+	#contents-inner #contact-box{
+		margin-bottom: 10%;
+	}
+	#menu a dl{
+		margin-bottom: 3%;
+	}
+	#menu a dl dt{
+		width: 33.3%;
+		float: left;
+	}
+	#menu a dl dd{
+		float: right;
+		width: 60%;
+		padding-top: 8%;
+	}
+	#menu a dl dd#juusyo{
+		float: right;
+		width: 60%;
+		padding-top: 6%;
+	}
+
+	#menu a dl dd p{
+		font-size: 4vw;
+		color: #1184a6;
+	}
+	#menu a dl dd h2{
+		font-size: 3vw;
+	}
+
+	#access-map #googlemap{
+		position: relative;
+		height: 0;
+		overflow: hidden;
+		padding-top: 50%;
+	}
+	#access-map #googlemap iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	#access-map h2{
+		font-size: 2.8vw;
+		text-align: center;
+		margin-top: 3.33%;
+		margin-bottom: 3.33%;
+		font-weight: bold;
+	}
+		#access-map h3{
+		font-size: 2.8vw;
+		text-align: center;
+		padding-bottom: 10%;
+		font-weight: bold;
+	}
+
+	#footer{
+		background-color: #cee7ee;
+	}
+	#footer-inner #logo{
+		width: 40%;
+		padding-top: 3.33%;
+		float: left;
+	}
+	#footer-inner #copyright{
+		float: right;
+		font-size: 1.25vw;
+		padding-top: 9.3%;
+	}
+	
+}
